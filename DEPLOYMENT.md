@@ -31,10 +31,11 @@ This guide walks you through deploying the portfolio to production using Vercel 
 
 2. **Import Project**:
    - Connect GitHub repository
-   - Framework Preset: Vite
+   - Framework Preset: **Vite** (auto-detected)
    - Root Directory: `frontend`
-   - Build Command: `npm run build`
-   - Output Directory: `dist`
+   - Build Command: `npm run build` (auto-detected)
+   - Output Directory: `dist` (auto-detected)
+   - Install Command: `npm install` (auto-detected)
 
 3. **Environment Variables** (in Vercel dashboard):
    ```
@@ -104,6 +105,9 @@ This guide walks you through deploying the portfolio to production using Vercel 
 4. **Build Failures**:
    - Check that all dependencies are in package.json
    - Verify Node.js version compatibility
+   - If "vite: command not found": Remove vercel.json and let Vercel auto-detect
+   - Ensure Root Directory is set to `frontend`
+   - Verify Build Command is `npm run build` not `vite build`
 
 ## 📊 Monitoring
 
