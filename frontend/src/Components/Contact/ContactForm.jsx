@@ -25,7 +25,7 @@ const Contact = () => {
 
     try {
       const response = await axios.post(
-        "https://portfolio-1-gigm.onrender.com/api/message/save",
+        `${import.meta.env.VITE_BACKEND_URL || "https://portfolio-backend-rcpd.onrender.com"}/api/message/save`,
         formData,
         {
           headers: {

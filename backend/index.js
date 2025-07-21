@@ -9,7 +9,22 @@ const messageRoutes = require('./routes/messageRoutes');
  connectDB(); // Connect to MongoDB
 
 const app = express();
-app.use(cors());
+
+// Configure CORS to allow requests from your frontend domains
+const corsOptions = {
+  origin: [
+    'http://localhost:5173', // Local development
+    'http://localhost:3000', // Alternative local port  
+    'https://shailendra-portfolio.vercel.app', // Your likely Vercel domain
+    'https://*.vercel.app', // Any Vercel subdomain
+  ],
+  credentials: true,
+  optionsSuccessStatus: 200,
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+  allowedHeaders: ['Content-Type', 'Authorization']
+};
+
+app.use(cors(corsOptions));
 app.use(bodyParser.json());
 
 app.use('/api/message', messageRoutes);
