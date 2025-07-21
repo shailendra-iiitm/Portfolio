@@ -15,8 +15,8 @@ const corsOptions = {
   origin: [
     'http://localhost:5173', // Local development
     'http://localhost:3000', // Alternative local port  
-    'https://shailendra-portfolio.vercel.app', // Your likely Vercel domain
-    'https://*.vercel.app', // Any Vercel subdomain
+    'https://shailendra-shukla.vercel.app', // Your actual Vercel domain
+    'https://shailendra-portfolio.vercel.app', // Alternative Vercel domain
   ],
   credentials: true,
   optionsSuccessStatus: 200,
