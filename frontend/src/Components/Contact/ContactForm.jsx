@@ -25,7 +25,7 @@ const Contact = () => {
 
     try {
       const response = await axios.post(
-        `${import.meta.env.VITE_BACKEND_URL || "https://portfolio-backend-rcpd.onrender.com"}/api/message/save`,
+        `${import.meta.env.VITE_BACKEND_URL || "http://localhost:7000"}/api/message/save`,
         formData,
         {
           headers: {

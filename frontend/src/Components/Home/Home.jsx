@@ -64,7 +64,7 @@ const Home = () => {
       </div>
       
       {/* Premium image design */}
-      <div className="order-1 md:order-2 mb-8 md:mb-0 relative z-10 animate-fadeInRight md:-ml-16">
+      <div className="order-1 md:order-2 mb-8 md:mb-0 relative z-10 animate-fadeInRight md:-ml-48">
         <div className="relative group">
           {/* Multiple layered glows for premium effect */}
           <div className="absolute -inset-8 bg-gradient-to-r from-[#465697] via-purple-500 to-[#5a6bb8] rounded-full blur-2xl opacity-20 group-hover:opacity-40 transition-opacity duration-700 animate-pulse"></div>
