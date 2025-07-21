@@ -1,0 +1,33 @@
+🎯 RESUME SETUP INSTRUCTIONS
+
+✅ ENHANCED FEATURES ADDED:
+- Resume button in navbar (both desktop & mobile)
+- Modal popup with PDF viewer
+- Download functionality
+- Open in new tab option
+- Increased profile image size (280px mobile, 500px desktop)
+
+📁 TO SET UP YOUR RESUME:
+
+1. Create your resume as a PDF file
+2. Name it 'resume.pdf' 
+3. Place it in: frontend/public/resume.pdf
+
+🔥 FEATURES INCLUDED:
+- Click navbar "Resume" button to open modal viewer
+- In-browser PDF viewing with controls
+- Download button downloads as 'Shailendra_Shukla_Resume.pdf'
+- External view button opens PDF in new tab
+- Responsive design for mobile and desktop
+- Smooth animations and modern UI
+
+📄 YOUR RESUME SHOULD INCLUDE:
+- Contact Information (shailendra.iiitsm@gmail.com, +91 86044 34817)
+- Education (IIIT Senapati, B.Tech ECE, CPI: 8.07/10)
+- Current Internships (Zidio Development, PW Skills)
+- Past Experience (IIT Ropar Research, C-DAC Security)
+- Projects (Guidely, ScribbleNSense, TummySmiles)
+- Technical Skills (React, Node.js, Python, C++, MongoDB, etc.)
+- Certifications (AI - IIT Guwahati, Deep Learning - IIT Kharagpur)
+
+🚀 Once you place the PDF file in the public folder, all resume features will work automatically!
