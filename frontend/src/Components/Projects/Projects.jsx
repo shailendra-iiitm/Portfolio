@@ -2,6 +2,7 @@ import React from "react";
 import ProjectCard from "./ProjectCard";
 import GuidelyImg from "../../assets/Guidely.jpg";
 import scribbleNSenseImg from "../../assets/scribbleNsense.jpg";
+import TummySmilesImg from "../../assets/tummy-smiles.png";
 import blogImg from "../../assets/image.png";
 
 const projectData = [
@@ -23,6 +24,25 @@ const projectData = [
     demoLink: "https://guidely-edu.vercel.app",
     sourceLink: "https://github.com/shailendra-iiitm/Guidely",
   },
+  {
+  title: "TummySmiles",
+  main: [
+    " A Modern Food Donation Platform that connects donors, agents, and admins in real-time.",
+    " Built with React (Vite), Tailwind CSS, Node.js (Express), and MongoDB with a glassmorphic UI & interactive animations.",
+    " Implements JWT-based authentication, bcrypt-secured passwords, protected routes, and session middleware.",
+    " Real-time donation tracking, agent assignment with GPS, photo uploads, impact metrics, and route visualization (Leaflet).",
+    " Role-based dashboards for Donor, Agent, and Admin with live stats, progress indicators, and analytics.",
+    " Integrated real-time chat via Socket.io with media sharing, typing indicators, and support ticket system.",
+    " Mobile-first design with particle backgrounds, hover effects, and responsive cards; optimized for fast loading.",
+    " Admin panel with agent assignment, user management, drag-and-drop tools, and performance dashboards.",
+  ],
+  techStack: [
+    "React", "Node.js", "Express", "MongoDB", "JWT", "Tailwind CSS", "Leaflet", "Socket.io"
+  ],
+  image: TummySmilesImg,
+  demoLink: "https://tummy-smiles.vercel.app",
+  sourceLink: "https://github.com/shailendra-iiitm/TummySmiles"
+},
   {
     title: "ScribbleNSense",
     main: [
