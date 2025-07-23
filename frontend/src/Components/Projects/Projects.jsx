@@ -27,14 +27,13 @@ const projectData = [
   {
   title: "TummySmiles",
   main: [
-    " A Modern Food Donation Platform that connects donors, agents, and admins in real-time.",
-    " Built with React (Vite), Tailwind CSS, Node.js (Express), and MongoDB with a glassmorphic UI & interactive animations.",
-    " Implements JWT-based authentication, bcrypt-secured passwords, protected routes, and session middleware.",
-    " Real-time donation tracking, agent assignment with GPS, photo uploads, impact metrics, and route visualization (Leaflet).",
-    " Role-based dashboards for Donor, Agent, and Admin with live stats, progress indicators, and analytics.",
-    " Integrated real-time chat via Socket.io with media sharing, typing indicators, and support ticket system.",
-    " Mobile-first design with particle backgrounds, hover effects, and responsive cards; optimized for fast loading.",
-    " Admin panel with agent assignment, user management, drag-and-drop tools, and performance dashboards.",
+    " A modern food donation platform connecting donors, agents, and admins in real-time.",
+    " Built with React (Vite), Tailwind CSS, Node.js (Express), and MongoDB.",
+    " Secure JWT auth with bcrypt, protected routes, and role-based dashboards.",
+    " Real-time donation tracking, GPS agent assignment, and Leaflet route mapping.",
+    " Socket.io-powered chat with media sharing and ticket-based support system.",
+    " Admin panel for agent assignment, user management, and donation analytics.",
+    " Mobile-first UI with glassmorphism, particle effects, and smooth transitions."
   ],
   techStack: [
     "React", "Node.js", "Express", "MongoDB", "JWT", "Tailwind CSS", "Leaflet", "Socket.io"
@@ -43,23 +42,25 @@ const projectData = [
   demoLink: "https://tummy-smiles.vercel.app",
   sourceLink: "https://github.com/shailendra-iiitm/TummySmiles"
 },
-  {
-    title: "ScribbleNSense",
-    main: [
-      "AI-powered visual and math problem solver",
-      "React (Vite) frontend with FastAPI backend",
-      "Processes handwritten input from HTML canvas",
-      "Gemini Vision API for content extraction and classification",
-      "MathJax for rendering LaTeX-based expressions",
-      "Draggable component-based UI for step-wise solutions",
-      "CORS handling, async I/O, and REST API routing",
-      "PIL for image decoding with OpenCV preprocessing plans",
-    ],
-    techStack: ["React", "FastAPI", "Gemini Vision API", "MathJax", "PIL", "OpenCV"],
-    image: scribbleNSenseImg,
-    demoLink: "https://scribble-n-sense.vercel.app",
-    sourceLink: "https://github.com/shailendra-iiitm/scribbleNsense",
-  }
+{
+  title: "ScribbleNSense",
+  main: [
+    "AI-powered tool that solves handwritten visual and math problems with step-wise explanations.",
+    "React (Vite) frontend with FastAPI backend for efficient and responsive user interaction.",
+    "Processes canvas-drawn input and extracts context using Gemini Vision API for classification.",
+    "MathJax used for rendering LaTeX-based mathematical expressions accurately.",
+    "Interactive draggable UI components allow easy step-wise problem navigation and exploration.",
+    "PIL-based image decoding pipeline with plans for OpenCV preprocessing for handwriting clarity.",
+    "Responsive design with clean layout focused on accessibility and cross-device compatibility."
+  ],
+  techStack: [
+    "React", "FastAPI", "Gemini Vision API", "MathJax", "PIL", "OpenCV"
+  ],
+  image: scribbleNSenseImg,
+  demoLink: "https://scribble-n-sense.vercel.app",
+  sourceLink: "https://github.com/shailendra-iiitm/ScribbleNSense"
+}
+
 ];
 
 const Projects = () => {
@@ -79,7 +80,7 @@ const Projects = () => {
           A showcase of my latest work in full-stack development, AI integration, and research projects
         </p>
         
-        <div className="py-12 px-4 grid grid-cols-1 lg:grid-cols-2 gap-8 place-items-center max-w-7xl mx-auto">
+        <div className="py-12 px-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 place-items-center max-w-7xl mx-auto">
           {projectData.map((project, index) => (
             <div 
               key={index}

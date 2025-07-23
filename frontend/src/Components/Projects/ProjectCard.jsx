@@ -3,7 +3,7 @@ import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
 
 const ProjectCard = ({ title, main, techStack, image, demoLink, sourceLink }) => {
   return (
-    <div className="p-4 md:p-6 w-80 md:w-96 lg:w-[420px] xl:w-[450px] h-full bg-[#0c0e19] rounded-2xl shadow-md hover:shadow-2xl shadow-slate-900 transition-all duration-300 transform hover:-translate-y-2 hover:scale-[1.02] flex flex-col">
+    <div className="p-4 md:p-6 w-full max-w-[380px] h-full bg-[#0c0e19] rounded-2xl shadow-md hover:shadow-2xl shadow-slate-900 transition-all duration-300 transform hover:-translate-y-2 hover:scale-[1.02] flex flex-col">
       <img
         className="rounded-xl object-cover w-full h-48 mb-4"
         src={image}
